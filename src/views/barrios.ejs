@@ -1,0 +1,59 @@
+<%- include('templates/head', {urlstyle:'css/style__index.css'}) %>
+    <section>
+        <div id="Container__options">
+            <div id="search__input">
+                <form action="" method="post">
+
+                    <div id="select__input">
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>CALIFICACION</option>
+                            <option value="1">A</option>
+                            <option value="2">B</option>
+                            <option value="3">Z</option>
+                        </select>
+                    </div>
+
+                    <div class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+            <div id="Constainer__index">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">NOMBRE</th>
+                        </tr>
+                    </thead>
+                    <% let i=1 %>
+                        <% Neibor.forEach(element=> { %>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <%= i %>
+                                    </th>
+                                    <td>
+                                        <%= element.name %>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+                            <% i +=1 %>
+                                <% }) %>
+                </table>
+
+            </div>
+        </div>
+
+
+    </section>
+    <%- include('templates/footer') %>

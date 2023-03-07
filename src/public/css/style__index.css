@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(58, 58, 58);
+}
+#Constainer__index{
+    width: auto;
+    height: 400px;
+    margin: auto;
+    overflow: scroll;
+}
+#Container__options{
+    width: 800px;
+    height: 500px;
+    margin: auto;
+}
+#Constainer__index table{
+    background-color: black;
+    color: wheat;
+}
+#search__input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+#select__input{
+    width: 150px;
+}
+#das{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 790px;
+    
+}
